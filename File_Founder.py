@@ -76,11 +76,14 @@ if __name__ == "__main__":
        ██║ ╚████║╚██████╔╝╚██████╔╝██║  ██║███████╗
    By: ╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
     """
-    
+
+    warning_message = "\033[91mWARNING: Please do not remove this credit if you modify this script.\033[0m"
+
     print("\033[1;36m" + "-" * 65)  # Warna Cyan
     print(ascii_noval)
     print("-" * 65 + "\033[0m")  # Reset warna
-    
+    print(warning_message)  # Menampilkan peringatan
+
     search_term = input("\nEnter file extension or name file for specific file: ").strip()
     folder_path = input("Enter drive D or C (leave empty for all drives): ").strip()
     
