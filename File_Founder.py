@@ -68,7 +68,7 @@ def find_files(search_term, folder_path=None, max_depth=5):
         print(f"No files found matching '{search_term}'.")
 
 if __name__ == "__main__":
-    ascii_file_finder = """
+    ascii_noval = r"""
      _____ _ _        _____ _           _           
     |  ___(_) | ___  |  ___(_)_ __   __| | ___ _ __ 
     | |_  | | |/ _ \ | |_  | | '_ \ / _` |/ _ \ '__|
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     warning_message = "\033[91mWARNING: Please do not remove this credit if you modify this script.\033[0m"
 
     print("\033[1;36m" + "-" * 65)  # Warna Cyan
-    print(ascii_file_finder)
+    print(ascii_noval)
     print("-" * 65 + "\033[0m")  # Reset warna
     print(warning_message)  # Menampilkan peringatan
 
