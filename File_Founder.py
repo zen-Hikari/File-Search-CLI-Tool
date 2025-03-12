@@ -62,7 +62,7 @@ def find_files(search_term, folder_path=None, max_depth=5):
     print("\n" + "-" * 65)  
 
     if matching_files:
-        print("\nFile Found:\n" + "-" * 65)  # Tambahkan teks "File Found:"
+        print(f"\nFile Found ({len(matching_files)})\n" + "-" * 65)  # Tambahkan jumlah file ditemukan
         print("\n".join(matching_files))
     else:
         print(f"No files found matching '{search_term}'.")
